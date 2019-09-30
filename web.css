@@ -1,6 +1,7 @@
 html,
 body {
-  background-color: lightgray;
+  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
+  background-color:black;
   background-blend-mode: color;
   font-family: "Open Sans";
   text-align: center;
@@ -13,7 +14,6 @@ body {
 
 .intro {
   top: 0;
-  background: #DACAF7;
   min-height: 55vh;
   padding-top: 45vh;
   color: white;
@@ -24,7 +24,7 @@ body {
 }
 
 .navBar { 
-    background-color: #333;
+    background-color: black;
     overflow: hidden;
     position:fixed;
     width: 100%;
@@ -47,21 +47,26 @@ body {
 .navBar .icon {
   display: none;
 }
+#TopNav{
+  position: fixed;
+}
 
-.projects {
+/* .projects {
   padding-top: 10%;
   margin-top: -60px;
   height: 100vh;
-}
+} */
 
 .projects .projects-header {
-  margin-top: 50px;
-  color: #350420;
+  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
+  background-blend-mode: color;
+  /* margin-top: 50px; */
+  /* color: black; */
   font-weight: bold;
   font-size: 30px;
 }
 
-.project {
+/* .project {
   text-decoration: none;
   color: #008080;
   display:inline-block;
@@ -80,10 +85,10 @@ body {
 
 .project-title {
   font-weight: bold;
-}
+} */
 
 .contact {
-  background-image: url("https://i.ibb.co/d7NZmK6/contactme.jpg");
+  background-color: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,8 +96,10 @@ body {
 }
 
 #About {
-  margin-top: 20%;
-  padding-top: 20%;
+  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
+  background-blend-mode: color;
+  margin-top: 5%;
+  padding-top: 5%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,6 +108,8 @@ body {
 }
 
 .row{
+  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
+  background-blend-mode: color;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,8 +117,49 @@ body {
   font-size: 10px;
 }
 
-.header {
+#header {
   padding: 160px 0 110px;
+  color: white;
+  font-size: 50px;
+  margin-top: 25px;
+  padding-top: 50px;
+  z-index: 999;
+
+}
+.line {
+  width: 24em;
+  top: 5%;
+  margin: auto;
+  /* border-right: 2px solid rgba(255, 255, 255, 0.75); */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  z-index: -999;
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+  blinkTextCussor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter {
+  from {
+        width: 0;
+  }
+  to {
+        width: 18em;
+  }
+}
+
+@media(max-width: 768px) {
+  @keyframes typewriter {
+        from {
+              width: 0;
+        }
+        to {
+              width: 17em;
+        }
+  }
 }
 
 .contact-details {
@@ -117,10 +167,10 @@ body {
   font-weight: bold;
   margin: 0 35px 45px 35px;
   list-style-type: none;
-  color: #350426;
+  color: white;
   text-decoration: none;
   padding-top: 200px;
-  font-size: 30px;
+  font-size: 150px;
 }
 
 .contact-details:hover {
@@ -135,7 +185,7 @@ i{
 
 footer {
   padding: 20px;
-  background: #350426;
+  background: black;
   color: white;
   line-height: 40px;
 }
@@ -155,38 +205,43 @@ footer a {
 }
 
 #welcome-section{
-  background-image:url("https://i.ibb.co/0Cpp7Y1/keybord.jpg");
+  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
   background-repeat: no-repeat;
   background-size: cover;
-  
-  width: 100%;
+  width: 100vw;
   color: white;
 }
 
   h1 {
+    color: white;
     font-family: 'Bree Serif', serif;
     font-size: 50px;
   }
+  h2 {
+    color: white;
+    font-family: 'Mali', cursive;;
+    font-size: 30px;
+    padding: 5px;
+  }
   p1 {
     color: white;
-    font-family: 'Macondo Swash Caps', cursive;
-    font-size: 25px;
+    font-family: 'Mali', cursive;;
+    font-size: 20px;
+    padding: 5px;
+  }
+  p2 {
+    align-self: center;
+  }
+  h5{
+    font-size: 20px;
+    align-self: center;
   }
 
- .stack{
-  /* font-size: 30px;
-  display: inline-block;
-  margin: 0 35px 45px 35px;
-  float: left; */
-  display: inline-block;
-  font-weight: bold;
-  margin: 0 35px 45px 35px;
-  list-style-type: none;
-  color: #350426;
-  text-decoration: none;
+ .row{
   padding-top: 200px;
   font-size: 100px;
-}
+  padding: 15px;
+} 
 @media only screen and (max-width: 600px) {
   
   .skills {
@@ -204,7 +259,7 @@ footer a {
 
 .section-heading {
   margin-top: 100px;
-  color: #350420;
+  color: white;
   font-weight: bold;
   font-size: 30px;
 }
@@ -295,7 +350,6 @@ footer a {
 
 	.toggle-nav {
 		padding:20px;
-		float:left;
 		display:inline-block;
 		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
 		border-radius:3px;
@@ -309,4 +363,8 @@ footer a {
 	.toggle-nav:hover, .toggle-nav.navbar {
 		text-decoration:none;
 		color:#66a992;
-	}
+  }
+}
+.container {
+  margin-top: 350px;
+}

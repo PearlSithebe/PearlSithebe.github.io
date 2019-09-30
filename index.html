@@ -1,73 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Macondo+Swash+Caps" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=B612+Mono|Mali|Stylish&display=swap" rel="stylesheet">
   <link rel= 'stylesheet' type="text/css" href= "web.css">
+  <script rel= 'stylesheet' type="text/javascript" href= "web.js"> </script>
   </head>
   <body>
 
-    <nav class="navBar">
+    <nav class="navBar" id="TopNav">
+
       <ul class="navbar">
       <li class="current-item"><a href="#welcome-section">Home</a></li>
       <li><a href="#About">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="projects.html">Projects</a></li>
       <li><a href="#mySkills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
+     
+      <a href ="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fas fa-bars"></i></a>
+
       </ul>
-      <a class="toggle-nav" href="#">&#9776;</a>
-
-      
-    </div>
 </nav>
-<section>
-<div id="welcome-section" class="intro">
 
+    <div id="welcome-section" class="intro">
   <h1>Hello I'm Palesa</h1>
-  <br> </br> 
   <p1>Once upon a time not long ago I became a web deloper, from that girl next door to the person behind this whole website. </p>
-</section>
-<br></br>
+  </div>
+
 
   <div id="About" class="about">
-      <section>
+        <h1>Wanna know Me?</h1>
+        <br> </br> 
           <a><img src="https://i.ibb.co/gdx9X3K/56197363-486745525193665-6552733031039516854-n.jpg"></img> </a>
           <br></br>
     <h2>I’m a junior web developer with a love for the aesthetically pleasing. I also believe that true beauty is in seamless user-friendly design. I have a keen interest for back-end development, because I understand what it means to be in the background but of great importance. My interest is in complexity, my skill is in simplicity and my passion in functionality. </h2>
   </div>
-</section>
-<section>
-</div>
-<div id="projects" class="projects">
-  <h3 class="projects-header">These are some of my projects.</h3>
-  <br></br>
-  <a href="https://codepen.io/Sithebe/pen/zQNbxz" target="_blank" class="project project-tile">
-    <img class="project-pic" src="https://i.ibb.co/GQLydrX/merlin-136783011-4ed93698-146b-4dbf-988e-202f03fed6bf-super-Jumbo.jpg" alt="project">
-    <div class="project-title">Tribute Page</div>
-  </a>
-  <a href="https://codepen.io/Sithebe/pen/MdJMeb" target="_blank" class="project project-tile">
-    <img class="project-pic" src="https://i.ibb.co/z2dJvPn/Survey-2-1024x10241.jpg" alt="project">
-    <div class="project-title">Survey form</div>
-  </a>
-  <br> 
-  </br>
-  <br>
-</br>
-</section>
 
 <div id="mySkills"></div>
 
 <section>
-  <h4 class="section-heading">Skills</h4>
+  <h4 class="section-heading" style="font-size:40px"> My Skills</h4>
   <br></br>
           <div class="row">
               <div class= "stack">
                 
-                <i class="skill fab fa-html5"> Html </i>
-              
-                <i class=" skill fab fa-css3-alt"> Css </i>
-
-                <i class=" skill fab fa-js-square"> Js </i>
+                <i class="skill fab fa-html5" style="color:orangered"></i>
+                <h5>HTML</h5>
+                <i class=" skill fab fa-css3-alt" style="color:mediumblue"></i>
+                <h5>CSS</h2>
+                <i class=" skill fab fa-js-square" style="color:rgb(255, 255, 0)"></i>
+                <h5>Javascript</h5>
                   
               </div>
           </div>
@@ -77,7 +58,8 @@
 <section>
 </div>
 <div id="contact" class="contact">
-  <div class="header">
+    
+  <div class="line anim-typewriter" id="header"> Got an interesting project? I can help you.
   </div>
   <a href="https://www.linkedin.com/in/palesa-sithebe-30357615b" target="_blank" class="contact-details"><i class="fab fa-linkedin" style="font-size: 40px"> </i> 
   <a  href="https://github.com/PearlSithebe" target="_blank" class="contact-details" > <i class="fab fa-github" style="font-size: 40px"></i></a>
