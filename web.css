@@ -1,16 +1,15 @@
-html,
 body {
-  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
-  background-color:black;
+  background-image:url("https://i.ibb.co/B2XhjBB/glass.png");
+  /* background-color:black; */
   background-blend-mode: color;
   font-family: "Open Sans";
   text-align: center;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
-}
+} 
 
 .intro {
   top: 0;
@@ -51,70 +50,29 @@ body {
   position: fixed;
 }
 
-/* .projects {
-  padding-top: 10%;
-  margin-top: -60px;
-  height: 100vh;
-} */
-
-.projects .projects-header {
-  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
-  background-blend-mode: color;
-  /* margin-top: 50px; */
-  /* color: black; */
-  font-weight: bold;
-  font-size: 30px;
-}
-
-/* .project {
-  text-decoration: none;
-  color: #008080;
-  display:inline-block;
-  overflow: hidden;
-  height: 280px;
-  width: 280px;
-  margin: 20px 10px;
-  
-}
-
-.project-pic {
-  width: 100%;
-  height: 180px;
-  
-}
-
-.project-title {
-  font-weight: bold;
-} */
-
 .contact {
-  background-color: black;
+  /* background-color: black; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90vh;
 }
 
 #About {
-  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
   background-blend-mode: color;
   margin-top: 5%;
   padding-top: 5%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   font-size: 20px;
 }
 
 .row{
-  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
-  background-blend-mode: color;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  text-align: left;
   height: 100vh;
-  font-size: 10px;
+  font-size: 30px;
+}
+.stack {
+  font-size: 30px;
 }
 
 #header {
@@ -122,15 +80,14 @@ body {
   color: white;
   font-size: 50px;
   margin-top: 25px;
-  padding-top: 50px;
-  z-index: 999;
+  padding-top: 290px;
+  z-index: -999;
 
 }
 .line {
   width: 24em;
   top: 5%;
   margin: auto;
-  /* border-right: 2px solid rgba(255, 255, 255, 0.75); */
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -169,7 +126,6 @@ body {
   list-style-type: none;
   color: white;
   text-decoration: none;
-  padding-top: 200px;
   font-size: 150px;
 }
 
@@ -205,7 +161,6 @@ footer a {
 }
 
 #welcome-section{
-  /* background-image:url("https://i.ibb.co/B2XhjBB/glass.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -222,6 +177,9 @@ footer a {
     font-family: 'Mali', cursive;;
     font-size: 30px;
     padding: 5px;
+  }
+  h3{
+    align-self: center
   }
   p1 {
     color: white;
@@ -251,12 +209,6 @@ footer a {
     line-height: normal;
   }
   }
-@media only screen and (max-width: 600px) {
-  .projects {
-    height: 50vh;
-  }
-}
-
 .section-heading {
   margin-top: 100px;
   color: white;
@@ -366,5 +318,61 @@ footer a {
   }
 }
 .container {
-  margin-top: 350px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding-left: 20px;
+  padding: 10px;
+  padding-top: 30px;
+}
+.projects {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+
+}
+img {
+  height: 90px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.projects:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgba(0,0,0,0.5);;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.whitespace {
+  height: 50px;
+  width: 130px;
 }
